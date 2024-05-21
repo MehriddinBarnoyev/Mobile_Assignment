@@ -24,7 +24,7 @@ class _AddProductsState extends State<AddProducts> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            "New Car",
+            "New Product",
             style: TextStyle(
               fontSize: 58,
               color: Color.fromARGB(255, 68, 122, 155),
@@ -39,7 +39,7 @@ class _AddProductsState extends State<AddProducts> {
             child: TextField(
               controller: productNameController,
               decoration: InputDecoration(
-                labelText: "Car name",
+                labelText: "Product name",
                 labelStyle: TextStyle(color: Colors.white),
                 fillColor: Color.fromARGB(255, 68, 122, 155),
                 filled: true,

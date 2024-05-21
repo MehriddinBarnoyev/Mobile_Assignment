@@ -15,57 +15,58 @@ class _BodyPartState extends State<BodyPart> {
 
   List<ProductClass> productsList = [
     ProductClass(
-      name: "Blue Fnonx electric car",
+      name: "Asus RYZEN  Core-i7 13-gen",
       cost:206000,
-      category: "Clothes",
-      imgUrl: "lib/images/img1.webp",
+      category: "Electronics",
+      imgUrl: "lib/images/img1.jpg",
     ),
     ProductClass(
-      name: "Black Malibu turbo 2.1",
+      name: "Asus RYZEN  Core-i7 13-gen",
       cost: 20000,
-      category: "Clothes",
+      category: "Electronics",
       imgUrl: "lib/images/img2.jpg",
     ),
     ProductClass(
-      name: "Black Cobalt turbo 1.8",
+      name: "New Japanese T-shirts",
       cost: 102000,
-      category: "Electronics",
-      imgUrl: "lib/images/cobalt.png",
+      category: "Clothes",
+      imgUrl: "lib/images/img3.webp",
     ),
     ProductClass(
-      name: "Blue Epica 1.9 GM",
+      name: "New Japanese T-shirts",
       cost: 80000,
-      category: "Entertainment",
-      imgUrl: "lib/images/img3.jpg",
+      category: "Clothes",
+      imgUrl: "lib/images/img4.jpg",
     ),
     ProductClass(
-      name: "Nexia 3 WHite 1.5",
+      name: "Asus RYZEN  Core-i7 13-gen",
+      cost: 10700,
+      category: "Electronics",
+      imgUrl: "lib/images/img2.jpg",
+    ),
+    ProductClass(
+      name: "New Futuristic sport Cloth",
       cost: 10700,
       category: "Sport",
-      imgUrl: "lib/images/img4.png",
-    ),
-    ProductClass(
-      name: "Nexia2 Legenda brown",
-      cost: 10700,
-      category: "Health",
       imgUrl: "lib/images/img5.jpg",
     ),
   ];
 
   Map<String, bool> categorySelection = {
     "Electronics": false,
-    "BYD": false,
-    "Tesla": false,
-    "GM": false,
-    "Mercedes": false,
+    "Clothes": false,
+    "Sport": false,
+    "Phone": false,
+    "Home Tech": false,
   };
 
   List<String> categories = [
      "Electronics",
-    "BYD",
-    "Tesla",
-    "GM",
-    "Mercedes",
+    "Clothes",
+    "Sport",
+    "Phone",
+    "Home Tech",
+    
   ];
 
   List<ProductClass> getFilteredProducts() {
@@ -181,7 +182,7 @@ class _BodyPartState extends State<BodyPart> {
               ),
               child: Center(
                 child: Text(
-                  "Add new Car",
+                  "Add Product",
                   style: TextStyle(
                     color: Color.fromARGB(255, 64, 190, 212),
                     fontSize: 18,
